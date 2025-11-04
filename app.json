@@ -1,0 +1,47 @@
+{
+  "expo": {
+    "name": "LiftLog Mobile",
+    "slug": "liftlog-mobile",
+    "version": "1.0.0",
+    "scheme": "liftlog",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "splash": {
+      "image": "./assets/splash.png",
+      "resizeMode": "contain",
+      "backgroundColor": "#111827"
+    },
+    "updates": {
+      "fallbackToCacheTimeout": 0
+    },
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.example.liftlog"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "foregroundImage": "./assets/adaptive-icon.png",
+        "backgroundColor": "#111827"
+      },
+      "package": "com.example.liftlog"
+    },
+    "plugins": [
+      ["expo-router"],
+      ["expo-secure-store"],
+      ["expo-sqlite"],
+      ["expo-document-picker"],
+      ["expo-file-system"]
+    ],
+    "experiments": {
+      "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "00000000-0000-0000-0000-000000000000"
+      }
+    }
+  }
+}
+
+
