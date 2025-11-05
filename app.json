@@ -27,11 +27,22 @@
       "package": "com.example.liftlog"
     },
     "plugins": [
-      ["expo-router"],
-      ["expo-secure-store"],
-      ["expo-sqlite"],
-      ["expo-document-picker"],
-      ["expo-file-system"]
+      [
+        "expo-router"
+      ],
+      [
+        "expo-secure-store"
+      ],
+      [
+        "expo-sqlite"
+      ],
+      [
+        "expo-document-picker"
+      ],
+      [
+        "expo-file-system"
+      ],
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
@@ -43,5 +54,3 @@
     }
   }
 }
-
-
