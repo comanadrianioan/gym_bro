@@ -1,6 +1,10 @@
-import { openDatabaseAsync, SQLiteDatabase } from 'expo-sqlite';
 import { nanoid } from './utils/uuid';
 import { Exercise, MuscleGroup } from './types';
+
+// Platform-specific imports - Metro will resolve to .native.ts or .web.ts automatically
+// On web: uses ./db-platform.web.ts -> ./db-web.ts (sql.js)
+// On native: uses ./db-platform.native.ts -> expo-sqlite
+import { openDatabaseAsync, SQLiteDatabase } from './db-platform';
 
 let dbPromise: Promise<SQLiteDatabase> | null = null;
 
